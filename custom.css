@@ -4,11 +4,11 @@
 }
 
 .navbar-default .navbar-brand {
-    color: rgb(0,115,165);
+    color: rgb(0, 115, 165);
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: rgb(0,115,165);
+    color: rgb(0, 115, 165);
 }
 
 #logo {
@@ -19,6 +19,12 @@
     height: 200px;
 }
 
-#text {
-    
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 60%;
+    margin: auto;
+}
+
+#myCarousel {
+    height: 100%;
 }
