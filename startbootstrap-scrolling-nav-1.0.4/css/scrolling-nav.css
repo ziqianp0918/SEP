@@ -79,3 +79,7 @@ of those sections to manage the look and feel of the site. */
     text-align: center;
     background: rgb(0,115,165);
 }
+
+#well {
+    background-color: rgb(166,168,171) ;
+}
