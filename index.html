@@ -39,7 +39,7 @@
                 <li> <a href="#opportunities" data-toggle="pill">Opportunities</a> </li>
                 <li> <a href="#grades" data-toggle="pill">Grades Breakdown</a></li>
                 <li> <a href="#project" data-toggle="pill">Project Showcase</a></li>
-                <li> <a href="#stories" data-toggle="pill">Sep Stories</a></li>
+                <li> <a href="#skills" data-toggle="pill">Sep Skills</a></li>
                 <li> <a href="#resource" data-toggle="pill">Resource</a></li>
                 <li> <a href="#picture" data-toggle="pill">Pictures</a></li>
 
@@ -72,12 +72,9 @@
             </div>
 
 
+            <div class="tab-pane">
+                <div class="container" id="opportunities">
 
-
-
-
-            <div class="tab-pane" id="opportunities">
-                <div id="background" class="container">
                     <div class="row">
                         <div class="col-lg-12">
                             <h1 align="center" class="gfonts">Opportunities</h1>
@@ -87,6 +84,7 @@
                             <a href="http://sepnyc.org/opportunities/pathfinders-mentorship-program/"><h2>Pathfinders</h2>gaining knowledge and hand on experiences</a>
                             <a href="https://codelikeagirlnyc.dalton.org/"><h2>Code like a girl</h2>finding other female coders</a>
                             <a href="http://nycgenerationtech.com/apply/"><h2>Gentech</h2>Great program with resources, good for dedicated student</a>
+
 
                             <div>
                                 <br>
@@ -117,14 +115,11 @@
                                 <div class="col-md-4"><img src="images/D3.jpg" class="img-responsive img-circle" alt="Responsive image"></div>
                             </div>
                         </div>
+
                     </div>
                 </div>
 
             </div>
-
-            </section>
-
-
 
             <!-- Services Section -->
             <section id="grades" class="services-section">
@@ -157,13 +152,11 @@
                                     <li>
                                         <br>
                                         <div class="container">
-
                                             <div id="well" class="well">"There is no such thing as a dumb question" -Mr.Mueller</div>
                                         </div>
 
                                     </li>
                                 </ul>
-
                             </p>
                             <h3> <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>   20% Homework </h3>
                             <p>
@@ -185,8 +178,6 @@
 
 
 
-                        </div>
-
                         <div class="tab-pane" id="project">
                             <div class="container">
                                 <div class="row">
@@ -195,6 +186,7 @@
                                         <hr class="hrc">
                                     </div>
                                 </div>
+
 
                                 <div class="row">
                                     <div class="col-md-6 portfolio-item">
@@ -219,9 +211,12 @@
                                 <!-- /.row -->
                             </div>
 
+
                         </div>
 
-                        <div class="tab-pane" id="stories">
+                        </div>
+
+                        <div class="tab-pane" id="skills">
 
                             <div class="container">
                                 <div class="row">
@@ -246,6 +241,7 @@
 
                                             </ul>
                                         </p>
+
                                     </div>
                                 </div>
                             </div>
@@ -259,6 +255,7 @@
                                 <br>
                                 <a href="http://getbootstrap.com/"><h2>getbootstrap</h2>Everything about bootstrap</a>
                             </div>
+
 
                         </div>
 
@@ -353,8 +350,36 @@
                     <!-- Bootstrap Core JavaScript -->
                     <script src="bootstrap.min.js"></script>
 
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+   // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
 </body>
 <!--cool website-->
 <!--http://blackrockdigital.github.io/startbootstrap-business-casual/blog.html-->
+
 
 </html>
