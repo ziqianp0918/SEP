@@ -90,3 +90,7 @@ of those sections to manage the look and feel of the site. */
 #background {
     background-color: rgb(0,115,165);
 }
+
+.black {
+    color: black;
+}
